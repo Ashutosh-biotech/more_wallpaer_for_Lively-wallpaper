@@ -1,0 +1,14 @@
+{
+  "AppVersion": "2.0.6.1",
+  "Title": "Clock",
+  "Thumbnail": "clock.png",
+  "Preview": "preview.gif",
+  "Desc": "Wallpaper with cubes and real-time clock",
+  "Author": "Ashutosh Kumar",
+  "License": null,
+  "Contact": "https://github.com/ashutoshbiotech2020/",
+  "Type": 1,
+  "FileName": "clock.html",
+  "Arguments": null,
+  "IsAbsolutePath": false
+}
