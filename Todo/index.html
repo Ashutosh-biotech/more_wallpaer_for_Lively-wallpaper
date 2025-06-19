@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-card">
+        <div class="todo-header">
+            <h1>🤜 Ashutosh Todo</h1>
+            <button id="addBtn">➕</button>
+        </div>
+        <div class="todo-body">
+            <!-- Add todo input field (initially hidden) -->
+            <div class="add-todo-container" id="addTodoContainer">
+                <div class="add-todo-input">
+                    <input type="text" id="todoInput" placeholder="Enter your todo...">
+                    <div class="add-todo-buttons">
+                        <button id="saveBtn">✓</button>
+                        <button id="cancelBtn">✕</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Existing todos -->
+            <div class="todo-item">
+                <div class="todo-checkbox">
+                    <input type="checkbox" id="todo1">
+                </div>
+                <div class="todo-text">
+                    <p>Complete the project documentation</p>
+                </div>
+                <div class="todo-actions">
+                    <button class="delete-btn">🗑️</button>
+                </div>
+            </div>
+            <div class="todo-item">
+                <div class="todo-checkbox">
+                    <input type="checkbox" id="todo2">
+                </div>
+                <div class="todo-text">
+                    <p>Review code changes</p>
+                </div>
+                <div class="todo-actions">
+                    <button class="delete-btn">🗑️</button>
+                </div>
+            </div>
+            <div class="todo-item completed">
+                <div class="todo-checkbox">
+                    <input type="checkbox" id="todo3" checked>
+                </div>
+                <div class="todo-text">
+                    <p>Setup development environment</p>
+                </div>
+                <div class="todo-actions">
+                    <button class="delete-btn">🗑️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div class="custom-alert-overlay" id="customAlertOverlay">
+        <div class="custom-alert">
+            <div class="custom-alert-header">
+                <h3 id="customAlertTitle">Alert</h3>
+            </div>
+            <div class="custom-alert-body">
+                <p id="customAlertMessage"></p>
+            </div>
+            <div class="custom-alert-footer">
+                <button id="customAlertOk" class="alert-btn alert-btn-primary">OK</button>
+                <button id="customAlertCancel" class="alert-btn alert-btn-secondary" style="display: none;">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
